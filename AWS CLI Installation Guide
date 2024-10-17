@@ -1,0 +1,25 @@
+Step 1: Ensure AWS Tools for PowerShell is Installed
+
+command -- Get-Module -ListAvailable AWSPowerShell
+
+Install AWS Tools for PowerShell: 
+command --- Install-Module -Name AWSPowerShell -Scope CurrentUser
+
+Step 2: use this command -- Import-Module AWSPowerShell
+
+Step 3: Verify AWS Tools for PowerShell
+command --- Get-Command Get-ECRLoginCommand
+
+Once the module is installed, you can verify that Get-ECRLoginCommand is available:
+command --- Get-Command Get-ECRLoginCommand
+finalyy;
+command --- (Get-ECRLoginCommand).Password | docker login --username AWS --password-stdin 764067395036.dkr.ecr.ap-south-1.amazonaws.com
+
+AWS CLI Version: Ensure that your AWS CLI is up to date. You can check the version by running:
+
+powershell
+
+aws --version
+
+
+
