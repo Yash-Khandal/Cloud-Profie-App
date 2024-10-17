@@ -1,0 +1,27 @@
+Here’s a summary of the CloudProfile project, step-by-step:
+
+Set Up Docker Environment:
+
+We containerized the application using Docker to ensure consistency across different environments.
+Built the application image locally and stored it using AWS ECR (Elastic Container Registry) to manage container images.
+MongoDB Setup:
+
+Integrated MongoDB as the database to store and manage user profiles.
+Configured Docker to run MongoDB as a containerized service, ensuring persistence using Docker volumes.
+Mongo Express Integration:
+
+Added Mongo Express to provide a web-based interface for managing MongoDB, running on port 8081.
+Docker Compose Setup:
+
+Used docker-compose to orchestrate the services, allowing us to run the application, MongoDB, and Mongo Express together.
+Mapped environment variables (e.g., MongoDB admin credentials) and linked volumes for data persistence.
+AWS ECR for Deployment:
+
+Pushed the container images to AWS ECR to facilitate easy deployment on any environment and maintain version control of Docker images.
+Profile Update Feature:
+
+Implemented a feature where user profile updates in the application reflect directly in MongoDB, demonstrating database connectivity.
+Deployment & Testing:
+
+Deployed and tested the full setup locally and ensured integration between services, using Docker volumes for persistence and MongoDB for dynamic profile management.
+This project demonstrates containerization, database integration, and cloud-based image management using Docker, MongoDB, and AWS ECR.
