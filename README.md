@@ -1,4 +1,6 @@
 # Cloud-Profie-App
+![Uploading image_processing20221206-2058-1xjqv2j.gif…]()
+
 
 "CloudProfile is a cloud-based application I developed that allows users to update and manage their profiles. It’s fully containerized using Docker, hosted on AWS ECR, and integrated with a MongoDB database. When users update their profiles, the changes sync instantly with the database.
 
